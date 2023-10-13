@@ -7,7 +7,7 @@ const App = () => {
 
   const imageStyle = {
     width: "100%",
-    borderRadius: isCircular ? "50%" : "0%"
+    borderRadius: isCircular ? "50%" : "0%",
   };
 
   const toggleCircular = () => {
@@ -27,7 +27,7 @@ const App = () => {
           src: foto,
           className: "foto-atur",
           style: imageStyle,
-          alt: "foto"
+          alt: "foto",
         })
       )
     ),
@@ -45,7 +45,11 @@ const App = () => {
   const tengahKiri = React.createElement(
     "div",
     { className: "tengah-kiri" },
-    React.createElement("h2", { style: { marginLeft: "2%" } }, "Informasi Pribadi"),
+    React.createElement(
+      "h2",
+      { style: { marginLeft: "2%" } },
+      "Informasi Pribadi"
+    ),
     React.createElement("p", { className: "stylep" }, "Laki-laki"),
     React.createElement("p", { className: "stylep" }, "Mahasiswa")
   );
@@ -62,7 +66,11 @@ const App = () => {
   const bawah = React.createElement(
     "div",
     { className: "bawah" },
-    React.createElement("h2", { style: { marginLeft: "2%" } }, "Riwayat Organisasi"),
+    React.createElement(
+      "h2",
+      { style: { marginLeft: "2%" } },
+      "Riwayat Organisasi"
+    ),
     React.createElement(
       "p",
       { className: "stylep" },
@@ -71,7 +79,11 @@ const App = () => {
     React.createElement(
       "div",
       { className: "buton" },
-      React.createElement("button", { onClick: toggleCircular }, "Ubah Lingkaran Foto")
+      React.createElement(
+        "button",
+        { onClick: toggleCircular },
+        "Ubah Lingkaran Foto"
+      )
     )
   );
 
